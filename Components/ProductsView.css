@@ -1,0 +1,101 @@
+/* container */
+.product-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* card */
+.product-card {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* image */
+.product-image img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* details */
+.product-details {
+  padding: 20px;
+  flex: 1;
+}
+
+/* title */
+.product-title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #222;
+}
+
+/* meta */
+.product-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.difficulty {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* tags */
+.tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: #ff7043;
+  color: white;
+  padding: 5px 12px;
+  margin-right: 8px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* section */
+.section {
+  margin-top: 15px;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* lists */
+ul, ol {
+  padding-left: 20px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* loading */
+.loading {
+  text-align: center;
+  margin-top: 50px;
+}

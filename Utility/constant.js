@@ -1,0 +1,1 @@
+export const LOGO ="https://plus.unsplash.com/premium_vector-1721831667850-cf38631501ad?q=80&w=784&auto=format&fit=crop"
