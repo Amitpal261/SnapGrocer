@@ -63,7 +63,8 @@ It focuses on **performance, scalability, and user experience**, delivering ligh
 * 🖼️ Optimized image loading
 
 ---
-
+## Screenshot 
+![OVERVIEW](images/home.png)
 ## 🧠 What This Project Demonstrates (For Recruiters)
 
 ✔ Strong understanding of **React architecture & hooks**
