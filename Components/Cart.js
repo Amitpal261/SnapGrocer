@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import styles from "./Cart.module.css";
+// import styles from "./Cart.module.css";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import UseRecipe from "./UseRecipe";
@@ -18,7 +18,8 @@ function RecipeCard({ data }) {
   return (
     <div className="flex flex-col bg-white/60 backdrop-blur-lg rounded-xl border border-gray-200 p-4 items-center w-72 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       
-      <img src={data.image} alt={data.name} className={styles.image} />
+      <img src={data.image} alt={data.name} className= "w-[200px] h-[200px] object-cover rounded-b-[20px] transition-transform duration-300 ease-in-out group-hover:scale-110" 
+ />
 
       <div className="text-center mt-3">
         <h2 className="text-lg font-semibold">{data.name}</h2>
