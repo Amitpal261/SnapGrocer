@@ -1,4 +1,4 @@
-# 🛒 QuickBasket
+# 🛒 SnapGrocer
 
 QuickBasket is a modern grocery delivery web application inspired by platforms like Swiggy Instamart and Blinkit. It provides a seamless shopping experience with fast search, category filtering, and smooth UI interactions.
 
