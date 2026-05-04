@@ -136,8 +136,8 @@ Licensed under the **MIT License**
 
 ## 👨‍💻 Author
 
-**Your Name**
-Frontend Developer
+**Amit Pal**
+MERN STACk Developer
 
 📌 *Open to opportunities | Building scalable web experiences*
 
