@@ -19,9 +19,9 @@ const GroceryLazy = React.lazy(() => import("./Components/Grocery.js"));
 let App = function () {
   const [dark, setDark] = useState(false);
   const [Username, setUsername] = useState("AMIT PAL")
- //console.log(Username);
- //const cartitems = useSelector()
-  
+  //console.log(Username);
+  //const cartitems = useSelector()
+
   // Load saved theme
   useEffect(() => {
     const saved = localStorage.getItem("theme");
@@ -43,19 +43,19 @@ let App = function () {
 
   return (
     <Provider store={appStore}>
-     <UserContext.Provider value={{ name: Username }}>
-<div
-   
-  className="bg-gradient-to-r from-orange-700 via-orange-500 to-pink-200 text-text min-h-screen flex flex-col"
-  style={{
-    background:"radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.3), transparent), radial-gradient(circle at 80% 80%, rgba(255, 192, 203, 0.3), transparent)",
-    // backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
-  }}
->      
-      {/* Header */}
-      <Header />
-        
-      {/* Toggle Button
+      <UserContext.Provider value={{ name: Username }}>
+        <div
+
+          className="bg-gradient-to-r from-orange-700 via-orange-500 to-pink-200 text-text min-h-screen flex flex-col"
+          style={{
+            background: "radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.3), transparent), radial-gradient(circle at 80% 80%, rgba(255, 192, 203, 0.3), transparent)",
+            // backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
+          }}
+        >
+          {/* Header */}
+          <Header />
+
+          {/* Toggle Button
       <div className="flex justify-center py-4">
         <button
           onClick={() => setDark(!dark)}
@@ -65,31 +65,31 @@ let App = function () {
         </button>
       </div>
        */}
-        {/* <UserInput Username={Username}  setUsername={setUsername}/>    */}
-      
-      {/* Page Content */}
-      <div className="flex-1 pt-15">
-        <Outlet />
-      </div>
+          {/* <UserInput Username={Username}  setUsername={setUsername}/>    */}
 
-      {/* Footer */}
-      <Footer />
-    </div>
-   </UserContext.Provider>,
-   </Provider>
+          {/* Page Content */}
+          <div className="flex-1 pt-15">
+            <Outlet />
+          </div>
+
+          {/* Footer */}
+          <Footer />
+        </div>
+      </UserContext.Provider>,
+    </Provider>
   );
 };
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element:<App/>,
+    element: <App />,
     errorElement: <Error />,
     children: [
       {
         path: "/",
-        
-        element: <Cart/>
+
+        element: <Cart />
       },
       {
         path: "/about",
@@ -103,7 +103,7 @@ export const router = createBrowserRouter([
         path: "/resturants/:id",
         element: <ProductView />
       },
-           {
+      {
         path: "/cart",
         element: <AddToCarts />
       },
